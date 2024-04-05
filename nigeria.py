@@ -1,0 +1,2 @@
+print("Nigeria " + "and " + "Africa");
+	
