@@ -3,9 +3,7 @@ import java.util.Scanner;
 		public static void main(String[] args) {
 
 	Scanner input = new Scanner(System.in);
-             int multipliedByOne = 1;		
-
-
+			
 		int number = 0;
 		int column = 1 + 1;		
 
