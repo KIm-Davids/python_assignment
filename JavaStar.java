@@ -5,15 +5,19 @@ import java.util.Scanner;
 	Scanner input = new Scanner(System.in);
              int multipliedByOne = 1;		
 
+
+		int number = 0;
+		int column = 1 + 1;		
+
 		System.out.print("Enter a number");
-		int number = input.nextInt();		
+		number = input.nextInt();		
 
 		for(int row = 1; row <= number; row++) {
-			System.out.println("* ");
+			System.out.println(" ");
 		
-		for(int column = 1 + 1; column <= 1; column+=2) {
+		for(column = 1; column <= row; column++) {
 			
-			System.out.print("# ");
+			System.out.print("* ");
 			}
 			}
 		}
