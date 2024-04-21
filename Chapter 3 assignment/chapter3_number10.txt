@@ -1,0 +1,12 @@
+user_input = int(input("Enter the amount"))
+
+for number in range(30):
+	a = 0
+	p = 1000
+	r = 7/100
+	t = 0
+
+	calculated_value = p(1 + r)**number
+	
+	print(calculated_value)
+	
