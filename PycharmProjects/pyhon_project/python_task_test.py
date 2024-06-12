@@ -42,6 +42,17 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(12, add_the_third_position([1, 2, 3, 4, 5, 6, 7, 8, 9]))
 
     def test_add_the_third_position(self):
-        self.assertEqual(add_the_first_middle_and_last_index())
+        self.assertEqual(15, add_the_first_middle_and_last_index([1, 2, 3, 4, 5, 6, 7, 8, 9]))
+
+    def test_that_user_can_add_to_a_set(self):
+        self.assertEqual({1, 2, 3, 4, 5, 6, 7}, collect_input_and_store_in_a_set([1, 2, 4, 5, 6, 7]))
+
+    def test_to_sum_up_a_collection(self):
+        self.assertEqual(21, sum_collection({1, 2, 3, 4, 5, 6}))
+
+    def test_inputted_number_is_not_present_in_the_set(self):
+        self.assertEqual("1", remove_item({"1", "2", "3", "4", "5", "6"}, "1"))
+
+
 if __name__ == '__main__':
     unittest.main()

@@ -125,9 +125,11 @@ def add_the_first_middle_and_last_index(collect_input):
 
 
 def collect_input_and_store_in_a_set(collect_input):
-    result = set(collect_input)
+    list_of_numbers = set()
+    for numbers in collect_input:
+        list_of_numbers.add(numbers)
 
-    return result
+    return list_of_numbers
 
 
 def sum_collection(collect_input, result=0):
@@ -138,13 +140,16 @@ def sum_collection(collect_input, result=0):
 
 
 def remove_item(collect_input, number):
+    removed_element = ""
     for numbers in collect_input:
-        if number == numbers:
-            removed_element = number
-        else:
-            removed_element = "None"
-
+        if numbers == number:
+            return number
+        if numbers != number:
+             return None
     return removed_element
+
+
+print(remove_item({"1", "2", "3", "4", "5", "6"}, "7"))
 
 
 def find_intersection(first_set, second_set):
@@ -285,9 +290,4 @@ def sum_the_sort_dictionary_by_value(collect_input):
         sorted_dictionary += sorted_values[value]
     return sorted_dictionary
 
-
-
-
-
-print(duplicate_number_list())
-
+#print(duplicate_number_list())
