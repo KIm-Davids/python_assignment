@@ -1,14 +1,22 @@
+import java.util.ArrayList;
+
 public class ShoppingCart {
 
-    private Item item;
-    private int itemPrice;
+
     private String paymentMethod;
+    private ArrayList<Item> itemList = new ArrayList<>();
 
+    public Item addToShoppingCart(Item item){
+        this.itemList.add(item);
+        return item;
+    }
 
+    public ArrayList<Item> getItemList() {
+        return itemList;
 
-    public ShoppingCart(Item item, int itemPrice, String paymentMethod){
-        this.item = item;
-        this.itemPrice = itemPrice;
+    }
+
+    public void PaymentMethod(String paymentMethod){
         this.paymentMethod = paymentMethod;
     }
 
@@ -17,11 +25,7 @@ public class ShoppingCart {
         return paymentMethod;
     }
 
-    public int getItemPrice() {
-        return itemPrice;
-    }
-
-    public Item getItem(){
-        return item;
+   public String toString() {
+        return String.valueOf(itemList);
     }
 }

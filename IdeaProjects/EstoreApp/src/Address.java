@@ -12,5 +12,9 @@ public class Address extends Users{
         this.customersAddress.add(state);
     }
 
+    public ArrayList<Address> userAddress(){
+        return customersAddress;
+    }
+
 
 }

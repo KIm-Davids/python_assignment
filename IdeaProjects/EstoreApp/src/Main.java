@@ -1,9 +1,10 @@
 public class Main {
     public static void main(String[] args) {
 
-    UserInterface user = new UserInterface();
-    user.firstPage();
 
-
+   Item item = new Item("Bread", 15000);
+   ShoppingCart cart = new ShoppingCart();
+   cart.addToShoppingCart(item);
+        System.out.println(cart.getItemList());
     }
 }

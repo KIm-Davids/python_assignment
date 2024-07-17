@@ -11,4 +11,8 @@ public class BillingInformation {
         this.billingInformation.add(recieverName);
     }
 
+    public ArrayList<BillingInformation> customerBillingInfo(){
+        return billingInformation;
+    }
+
 }
