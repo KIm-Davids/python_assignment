@@ -10,6 +10,7 @@ import lombok.*;
 @NoArgsConstructor
 public class CommentRequest {
 
-    private String commmentid;
+    private String commenterId;
     private String comment;
+    private String postId;
 }
